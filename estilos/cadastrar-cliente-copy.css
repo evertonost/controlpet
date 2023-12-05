@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap');
+
+:root{
+    
+  --fundo: #171418;
+  --meio: #ED6515;
+  --sobrepor: #f78848;
+  --botoes: #432818;
+  --corfonte: #EAE2B7;
+  --fonte: 'Poppins', sans-serif;
+  --textosgerais: #F9F8F9;
+
+  --botaosair: #fd001b;
+  --botaosairhover: #8b0000;
+
+  --hoverbotao: #EAE2B7;
+  --hoverfonte: #171418;
+
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+}
+
+body{
+  font-size: 100%;
+  background-color: var(--fundo);
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+
+.box-cadastro{
+  width: 1300px;
+  height: auto;
+  overflow: hidden;
+  background-color: var(--meio);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cadastro{
+  width: 60%;
+  height: 100%;
+}
+
+.foto{
+  width: 40%;
+  height: 100%;
+  
+}
+
+.foto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;  /* Remove a borda padrão da imagem */
+}
+
+.conteudo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form{
+  width: 90%;
+  height: 650px;
+  color: var(--corfonte);
+  font-family: 'Poppins', sans-serif;
+}
+
+.infos-cliente{
+  margin-top: 5px;
+}
+
+.infos-cliente h2{
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.infos-cliente hr{
+  border-color: var(--botoes);
+}
+
+.nome{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.nome label{
+  font-size: 1.1rem;
+  margin: 3px 0 5px 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.nome input{
+  padding: 3px 5px;     /* //o primeiro muda a espessura */
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid var(--botoes);
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.nome input::-webkit-input-placeholder{   /* fonte dentro do input */
+  font-size: .9rem;
+  margin-left: 3px;
+}
+
+.cpf-data{
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.cpf, .data-nascimento{
+  display: flex;
+  flex-direction: column;
+}
+
+.cpf{
+  width: 70%;
+}
+
+.cpf label{
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.cpf input{
+  padding: 3px 5px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid var(--botoes);
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  transition: .2s ease-in-out;
+}
+
+.contato{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.telefone1, .telefone2 label{
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.telefone1, .telefone2 input{
+  padding: 3px 5px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid var(--botoes);
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  transition: .2s ease-in-out;
+}
+
+.telefone1,
+.telefone2 {
+  width: 48%; /* Ajuste conforme necessário */
+}
+
+.telefone1, .telefone2{
+  display: flex;
+  flex-direction: column; /*texto em cima da linha*/
+  margin-top: 5px;
+  
+}
+
+.senha, .confirmacao-senha{
+  display: flex;
+  flex-direction: column; /*texto em cima da linha*/
+  margin-top: 5px;
+  width: 48%;
+  
+}
+
+.senha{
+  float: left;
+}
+.confirmacao-senha{
+  float: right;
+}
+
+.senha label,
+.confirmacao-senha label {
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+  margin: 3px 0 5px 0;
+  font-weight: 500;
+}
+
+.senha input,
+.confirmacao-senha input {
+  padding: 3px 5px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid var(--botoes);
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  transition: .2s ease-in-out;
+  
+}
+
+
+.data-nascimento{
+  width: 40%;
+  margin-left: 20px;
+}
+
+.data-nascimento label{
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.data-nascimento input{
+  
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid var(--botoes);
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.email{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.email label{
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.email input{
+  padding: 3px 5px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid var(--botoes);
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.contato {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+.senha label,
+.confirmacao-senha label {
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.senha input,
+.confirmacao-senha input {
+  padding: 3px 5px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid var(--botoes);
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.localizacao{
+  margin-top: 5px;
+}
+
+.localizacao h2{
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.localizacao hr{
+  border-color: var(--botoes); /*cor da barra que aparece*/
+}
+
+.divisao{
+  display: flex;
+  flex-direction: column;
+}
+
+/* parte de cima */
+
+.cima{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.rua, .numero, .complemento{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.rua{
+  width: 50%;
+}
+
+
+
+.numero{
+  width: 25%;
+  margin: 10px;
+}
+
+.complemento{
+  width: 25%;
+}
+
+.rua label, .numero label, .complemento label{
+  font-size: 1.1rem;
+  
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.rua input, .numero input, .complemento input{
+  padding: 3px 5px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid var(--botoes);
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.baixo{
+  display: flex;
+  flex-direction: row;
+}
+
+.estado, .cidade{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  width: 50%;
+}
+
+.estado{
+  margin: 5px 5px 0 0;
+}
+
+.estado label, .cidade label{
+  font-size: 1.1rem;
+  margin: 3px 0 5px 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.estado input, .cidade input{
+  padding: 3px 5px;
+  border-radius: 6px;
+  outline: none;
+  border: 2px solid var(--botoes);
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.link{
+  margin-top: 65px;
+}
+
+
+.btn{
+  font-family: var(--fonte);
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--botoes);
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  color: var(--corfonte);
+  font-size: 15pt;
+  
+}
+
+.btn:hover{
+background-color: var(--hoverbotao);
+color: var(--hoverfonte);
+font-size: 15pt;
+}
+
+/* Estilizando o botão de envio de fotos */
+.botao-label input[type="file"] {
+  display: none; /* Esconde o input de tipo file padrão */
+}
+
+.botao-label::before {
+  content: "Escolher Foto"; /* Altera o texto exibido antes do botão */
+  display: inline-block;
+  background-color: var(--botoes); /* Cor de fundo do botão */
+  color: var(--corfonte); /* Cor do texto do botão */
+  padding: 8px 10px; /* Adapte o preenchimento conforme necessário */
+  border-radius: 5px; /* Borda arredondada */
+  cursor: pointer;
+  margin-top: 3px;
+  
+}
+
+/* Ao passar o mouse, altera a aparência do botão */
+.botao-label:hover::before {
+  background-color: var(--hoverbotao); /* Cor de fundo ao passar o mouse */
+  color: var(--hoverfonte); /* Cor do texto ao passar o mouse */
+}

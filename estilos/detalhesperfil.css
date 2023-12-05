@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap');
+:root{
+    
+    --fundo: #171418;
+    --meio: #ED6515;
+    --sobrepor: #f78848;
+    --botoes: #432818;
+    --corfonte: #EAE2B7;
+    --fonte: 'Poppins', sans-serif;
+    --textosgerais: #F9F8F9;
+
+    --botaosair: #fd001b;
+    --botaosairhover: #8b0000;
+
+    --hoverbotao: #EAE2B7;
+    --hoverfonte: #171418;
+
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--fundo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo {
+    margin-top: 2%;
+    max-width: 2000px;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    background-color: var(--meio);
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    min-height: 900px;
+    
+}
+
+.perfil{
+    min-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--sobrepor);
+    margin-bottom: 3%;
+    width: 55%;
+    border-radius: 20px;
+    height: auto;
+    overflow: hidden;
+    min-height: 300px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+    .ajustarfotonaesquerda{
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 100%;
+        margin-bottom: 15px;
+        flex-direction: column;
+        /* background-color: #EAE2B7; */
+    }
+
+        .ajustebotoes{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+    .fotodeperfil{
+        width: 200px;
+        max-width: 200px;
+        height: 200px;
+        float: left;
+        border-radius: 20px;
+    }   
+
+
+h1{
+    font-family: var(--fonte);
+    color: var(--corfonte);
+}
+
+.sair {
+    margin-top: 10px;
+    padding: 3px 10px;
+    border-radius: 15px;
+    background-color: var(--botaosair);
+    color: var(--corfonte);
+    font-family: var(--fonte);
+    font-size: 15pt;
+    border: none;
+}
+
+button:hover{
+    background-color: var(--botaosairhover);
+    color: var(--textosgerais);
+}
+
+h2{
+    font-family: var(--fonte);
+    color: var(--corfonte);
+    font-size: 15pt;
+}
+
+.mais{
+    margin-top: 10px;
+    padding: 3px 10px;
+    border-radius: 15px;
+    background-color: var(--botoes);
+    color: var(--corfonte);
+    font-family: var(--fonte);
+    font-size: 15pt;
+    border: none;
+}
+
+.mais:hover{
+    background-color: var(--hoverbotao);
+    color: var(--hoverfonte);
+}
+
+
+
+.formulario{
+    
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+text{
+    font-family: var(--fonte);
+    color: var(--corfonte);
+    display: flex;
+    text-align: start;
+}
+
+    .text1{
+        font-family: var(--fonte);
+        color: var(--corfonte);
+        display: flex;
+        justify-content: center;
+    }
+
+input{
+    border-radius: 3px;
+    float: left;
+    
+}
+
+.input{
+    border-radius: 3px;
+    width: 60%;
+    float: left;
+}
+
+.inputcenter{
+    width: 30%;
+    float: right;
+    border-radius: 3px;
+}
+
+.inputnome{
+    border-radius: 3px;
+    font-family: var(--fonte);
+    width: 100%;
+    float: left;
+}
+
+.telefone1{
+    border-radius: 3px;
+    width: 45%;
+    float: left;
+}
+
+.telefone2{
+    width: 45%;
+    float: right;
+    border-radius: 3px;
+    
+}
+
+.center{
+    width: 33%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    width: 33%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.right{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+.alinhar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tamanho{
+    width: 92%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .formulario {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .fotodeperfil {
+        order: -1;
+        margin: auto;/* Move a foto de perfil para cima em telas pequenas */
+    }
+}
+

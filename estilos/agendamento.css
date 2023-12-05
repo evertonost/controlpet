@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap');
+:root{
+    
+    --fundo: #171418;
+    --meio: #ED6515;
+    --sobrepor: #f78848;
+    --botoes: #432818;
+    --corfonte: #EAE2B7;
+    --fonte: 'Poppins', sans-serif;
+    --textosgerais: #F9F8F9;
+
+    --botaosair: #fd001b;
+    --botaosairhover: #8b0000;
+
+    --hoverbotao: #EAE2B7;
+    --hoverfonte: #171418;
+
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--fundo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    max-width: 2000px;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    background-color: var(--meio);
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    min-height: 900px;
+    box-sizing: border-box;
+    
+}
+
+.emcimadooutro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    
+}
+
+.center{
+    width: 20%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.ficarnaesquerda{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row; /* Alterado para flex-direction: row */
+    justify-content: space-evenly; /* Alterado para space-around */
+    align-items: center; /* Adicionado para centralizar verticalmente */
+
+}
+
+
+.baixo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.baixo button {
+    margin: 0 10px;
+}
+
+h1{
+    font-family: var(--fonte);
+    color: var(--corfonte);
+}
+
+h2{
+    font-family: var(--fonte);
+    color: var(--corfonte);
+}
+
+label {
+    width: 100%;
+    display: block;
+    font-size: 18px;
+    text-align: start;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.btn{
+    font-family: var(--fonte);
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: var(--botoes);
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    color: var(--corfonte);
+    font-size: 15pt;
+  }
+  
+  .btn:hover{
+  background-color: var(--hoverbotao);
+  color: var(--hoverfonte);
+  font-size: 15pt;
+  }
+
+h2{
+    font-family: var(--fonte);
+    color: var(--corfonte);
+    font-size: 15pt;
+}
+
+.mais{
+    margin-top: 10px;
+    padding: 3px 10px;
+    border-radius: 15px;
+    background-color: var(--botoes);
+    color: var(--corfonte);
+    font-family: var(--fonte);
+    font-size: 15pt;
+    border: none;
+}
+
+.mais:hover{
+    background-color: var(--hoverbotao);
+    color: var(--hoverfonte);
+}
+
+
+
+.formulario{
+    
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+text{
+    font-family: var(--fonte);
+    color: var(--corfonte);
+    display: flex;
+    text-align: start;
+}
+
+    .text1{
+        font-family: var(--fonte);
+        color: var(--corfonte);
+        display: flex;
+        justify-content: center;
+    }
+
+input{
+    border-radius: 3px;
+    float: left;
+    
+}
+
+.input{
+    border-radius: 3px;
+    width: 60%;
+    float: left;
+}
+
+.cnpj input{
+    border-radius: 3px;
+    width: 100%;
+   
+}
+
+.inputcenter{
+    width: 30%;
+    float: right;
+    border-radius: 3px;
+}
+
+.inputnome{
+    border-radius: 3px;
+    font-family: var(--fonte);
+    width: 100%;
+}
+
+.telefone1{
+    border-radius: 3px;
+    width: 45%;
+    float: left;
+}
+
+.telefone2{
+    width: 45%;
+    float: right;
+    border-radius: 3px;
+    
+}
+
+
+
+.left{
+    width: 33%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.right{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+.alinhar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tamanho{
+    width: 92%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .formulario {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .fotodeperfil {
+        order: -1;
+        margin: auto;/* Move a foto de perfil para cima em telas pequenas */
+    }
+}
+

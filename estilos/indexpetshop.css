@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap');
+:root{
+    
+    --fundo: #171418;
+    --meio: #ED6515;
+    --sobrepor: #f78848;
+    --botoes: #432818;
+    --corfonte: #EAE2B7;
+    --fonte: 'Poppins', sans-serif;
+    --textosgerais: #F9F8F9;
+
+    --botaosair: #fd001b;
+    --botaosairhover: #8b0000;
+
+    --hoverbotao: #EAE2B7;
+    --hoverfonte: #171418;
+
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--fundo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo {
+    margin-top: 2%;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    background-color: var(--meio);
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    min-height: 900px;
+}
+
+.perfil{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--sobrepor);
+    margin-bottom: 3%;
+    width: 55%;
+    border-radius: 20px;
+    height: 300px;
+    padding: 10px;
+    position: relative;
+}
+
+    .ajustarfotonaesquerda{
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 100%;
+        margin-bottom: 15px;
+        flex-direction: column;
+        /* background-color: #EAE2B7; */
+    }
+
+    .servicos {
+        background-color: var(--sobrepor);
+        width: 40%;
+        float: left;
+        height: auto;
+        min-height: 399px;
+        max-height: 400px;
+        /* overflow: hidden; */
+        border-radius: 20px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: auto;
+    }
+
+
+        .ajustebotoes{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+    .fotodeperfil{
+        width: 200px;
+        height: 200px;
+        float: left;
+        border-radius: 20px;
+    }   
+
+    .servicos {
+        background-color: var(--sobrepor);
+        width: 40%;
+        float: left;
+        height: auto;
+        min-height: 399px;
+        max-height: 400px;
+        /* overflow: hidden; */
+        border-radius: 20px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: auto;
+    }
+
+    .meuspets {
+        background-color: var(--sobrepor);
+        width: 40%;
+        float: right;
+        height: auto;
+        min-height: 399px;
+        overflow-y: auto;
+        /* overflow: hidden; */
+        max-height: 399px;
+        border-radius: 20px;
+        margin-right: 20px;
+        max-height: 400px; 
+    }
+         Defina a altura máxima desejada para a div meuspets 
+   
+
+h1{
+    font-family: var(--fonte);
+    color: var(--corfonte);
+}
+
+.sair {
+    margin-top: 10px;
+    padding: 3px 10px;
+    border-radius: 15px;
+    background-color: var(--botaosair);
+    color: var(--corfonte);
+    font-family: var(--fonte);
+    font-size: 15pt;
+    border: none;
+}
+
+button:hover{
+    background-color: var(--botaosairhover);
+    color: var(--textosgerais);
+}
+
+h2{
+    font-family: var(--fonte);
+    color: var(--corfonte);
+    font-size: 25pt;
+}
+
+.mais{
+    margin-top: 10px;
+    padding: 3px 10px;
+    border-radius: 15px;
+    background-color: var(--botoes);
+    color: var(--corfonte);
+    font-family: var(--fonte);
+    font-size: 15pt;
+    border: none;
+}
+
+.mais:hover{
+    background-color: var(--hoverbotao);
+    color: var(--hoverfonte);
+}
+
+/*.ajustarbotoesdadireita{
+    /* background-color: var(--meio); */
+    /* display: flex;
+    flex-direction: column;
+    align-items: end;
+    float: right;
